@@ -1,0 +1,33 @@
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ol,
+ul {
+  list-style: none;
+}
+
+li,
+a {
+  text-decoration: none;
+}
+
+*{
+  box-sizing: border-box;
+}
+button{
+  background: none;
+  margin: 0;
+  padding: 0;
+  border-width: 0;
+}

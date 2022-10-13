@@ -1,0 +1,184 @@
+.footer{
+    &__wrapper{
+        max-width: 1200px;
+        width: 100%;
+    margin: 0 auto;
+        background: 
+        linear-gradient(0deg, rgba(224, 224, 224, 0.47) 0%, rgba(225, 225, 225, 0.16) 20.75%, rgba(255, 254, 254, 0.26) 84.14%, #FFFFFF 126.52%),
+        url('/assets/img/footer-banner.png') no-repeat 0 75px;
+    @include flex(flex-start,space-between);
+    padding:  178.4px 123.3px  55.6px 108.7px;
+    gap: 20px;
+    background-size: 100%;
+    @include sl{
+        padding:  178.4px 44px  32.4px 16px;
+    }
+    @include xs{
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding:  81.7px 32.4px  32.4px 16px;
+    }
+    @include xxs{
+        justify-content: flex-start;
+        background-size: 130%;
+    }
+    }
+    .fa-brands{
+        @include flex(center,center);
+        width: 36px;
+        height: 36px; 
+        
+        font-size: 22px;
+        @include xxs{
+            width: 24px;
+        height: 24px; 
+        font-size: 14px;
+        }
+    }
+    a{
+        text-decoration: none;
+    }
+    &__menu{
+margin-top: 33px;
+width: 214px;
+@include xs{
+   min-width: 352px;
+}
+    }
+    &__whatsapp{
+        @include flex(center,flex-end);
+        gap: 14px;
+        width: 100%;
+        margin-bottom: 36.3px;
+
+        @include xs {
+            justify-content: flex-start;
+            margin-bottom: 14.3px;
+        }
+    }
+    &__whatsapp-title{
+        font-weight: 500;
+        font-size: 16px;
+    }
+    &__whatsapp-desc{
+        font-size: 12px;
+        font-weight: 400;
+        color: #5F5F5F;
+    }
+    &__list{
+        @include flex(flex-start,space-between);
+        flex-direction: column;
+        gap: 8px;
+        // column-gap: 16px;
+        margin-top: 15px;
+        @include xs{
+            flex-wrap: wrap;
+            height: 151px;
+            justify-content: flex-start;
+        }
+
+    }
+    &__list-item{
+        margin-right: 16px;
+    }
+    &__list-link{
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        color: #000000;
+        &:hover{
+            font-weight: 700;
+        }
+        @include xs{
+            font-size: 14px;
+        }
+
+    }
+    &__info{
+        width: 249px;
+        // margin-top: 108.3px;
+        // margin-right: auto;
+        // margin-left: 144px;
+        margin: 108.3px auto 0 144px;
+        p.description--small:last-child{
+            line-height: 21px;
+        }
+        @include xxs{
+            width: 100%;
+            margin-top: 0;
+            margin-left: 0;
+            .description--small{
+                font-size: 10px;
+            }
+        }
+    }
+    &__info-desc{
+        padding: 15px 0 5.2px;
+        @include xxs {
+            padding: 0;
+        }
+    }
+    &__payment{
+        width: 151px;
+        margin-top: 33px;
+        @include xxs{
+            margin-top: 0;
+            // @include flex(center, flex-start);
+            // flex-direction: column-reverse;
+        }
+    }
+    &__socials{
+        @include flex(center, flex-start);
+        gap: 10px;
+        padding-bottom:14.3px ;
+        &--phone{
+            display: none;
+        }
+        @include xxs{
+            display: none;
+            &--phone{
+                @include flex(center, flex-start);
+                margin-top: 18px;
+            }
+        }
+    }
+    &__payment-wrap{
+        @include xxs{
+            @include flex(flex-start, space-between);
+            gap: 34px;
+        }
+    }
+    &__payment-title{
+        margin-top: 23px;
+        @include xxs{
+            margin-top: 0;
+            font-size: 14px
+        }
+    }
+    &__payment-method{
+        @include flex(center,flex-start);
+        flex-wrap: wrap;
+        gap: 10px;
+        width: 152px;
+        margin-top: 8px;
+    }
+    &__payment-item{
+        cursor: pointer;
+        img{
+            width: 44px;
+        }
+    }
+    &__security{
+        @include flex(flex-start, flex-start);
+        gap: 10px;
+        margin-top: 12px;
+    }
+    &__security-ctv{
+        width: 64px;
+        height: 72px;
+    }
+    &__security-comodo{
+        width: 66.5px;
+        height: 55px;
+    }
+}

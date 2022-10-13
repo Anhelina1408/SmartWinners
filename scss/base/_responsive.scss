@@ -1,0 +1,45 @@
+$xs:576px;
+$sm:768px;
+$lg:830px;
+$sl:1055px;
+$xl:1200px;
+$xxl:1400px;
+
+@mixin xxs {
+    @media (max-width: #{$xs - 1px}) {
+      @content;
+    }
+  }
+  
+  @mixin xs {
+    @media (max-width: #{$sm - 1px}) {
+      @content;
+    }
+  }
+  
+  @mixin sm {
+    @media (max-width: #{$lg - 1px}) {
+      @content;
+    }
+  }
+  @mixin sl {
+    @media (max-width: #{$sl - 1px}) {
+      @content;
+    }
+  }
+  @mixin lg {
+    @media (max-width: #{$xl - 1px}) {
+      @content;
+    }
+  }
+  @mixin xl {
+    @media (max-width: #{$xxl - 1px}) {
+      @content;
+    }
+  }
+
+  @mixin xxl {
+    @media (min-width: #{$xxl}) {
+      @content;
+    }
+  }  
